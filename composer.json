@@ -1,0 +1,37 @@
+{
+    "name": "mattyeend/laravel-model-service",
+    "description": "Extends Laravel make:model to also create a service class when using -S flag or --service option.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "Laravel",
+        "Model",
+        "Service",
+        "Laravel-Model-Service",
+        "Package"
+    ],
+    "authors": [
+        {
+            "name": "Matt Yeend",
+            "email": "mail@mattyeend.co.uk"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "MattYeend\\LaravelModelService\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MattYeend\\LaravelModelService\\LaravelModelServiceServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/filesystem": "^10.0|^11.0|^12.0",
+        "illuminate/console": "^10.0|^11.0|^12.0"
+    }
+}
